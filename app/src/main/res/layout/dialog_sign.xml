@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="读取中..."
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_big"
+        android:visibility="gone" />
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:text="EPC:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_big"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_epc"
+                android:inputType="number|text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        >
+        <EditText
+            android:id="@+id/et_incode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="扫描店内码"
+            android:background="@drawable/edit_common"
+            android:padding="5dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="箱号："
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text=""/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店内码："
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tv_incode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text=""/>
+            <TextView
+                android:id="@+id/tv_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="切换"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <ImageView
+            android:id="@+id/animation1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:padding="5px"
+            android:src="@drawable/find_epc_animation1" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        <Button
+            android:id="@+id/btn_read_or_stop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_button_height"
+            android:background="@drawable/button_common"
+            android:text="开始扫描"
+            android:textColor="@drawable/button_common_text"
+            android:textSize="@dimen/text_size_middle" />
+
+    </LinearLayout>
+
+</LinearLayout>

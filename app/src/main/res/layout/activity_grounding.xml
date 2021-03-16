@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <Spinner
+            android:id="@+id/sp_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"></Spinner>
+
+        <EditText
+            android:id="@+id/et_incode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/hint_incode"
+            android:textSize="@dimen/text_middle"
+            android:gravity="center"
+            android:background="@drawable/edit_common"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btn_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_commit"
+            android:minWidth="0dp"
+            android:minHeight="0dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:id="@+id/tv_incode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text_no_scan"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_huge"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/text_huge"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

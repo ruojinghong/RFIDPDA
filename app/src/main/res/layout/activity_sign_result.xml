@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SignResultActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/tv_allacotion_id"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="调拨单号：20170310104025-11228-8431"
+        android:textColor="@color/black"
+        android:lines="1"
+        android:textSize="13dp"/>
+    <LinearLayout
+        android:layout_below="@id/tv_allacotion_id"
+        android:id="@+id/ll_total"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_ll_total"
+        >
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    应收数量"/>
+
+        <TextView
+            android:id="@+id/total_num"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:text="11111"
+            android:textColor="@color/primary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/tv_allacotion_id"
+        android:id="@+id/ll_receive"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_ll_total"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    签收数量"/>
+
+        <TextView
+            android:id="@+id/sign_num"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:text="11111"
+            android:textColor="#009688"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/lv_head"
+        android:layout_below="@+id/ll_total"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999">
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="11dp"
+            android:text="箱号"/>
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="11dp"
+            android:text="收货数量(实/应)"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@id/lv_head"
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

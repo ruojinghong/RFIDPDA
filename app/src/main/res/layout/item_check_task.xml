@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lide.app.persistence.view.SlidingButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_check_task_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_check_task_modify"
+            android:background="@drawable/btn_click_red_havebackground"
+            android:gravity="center"
+            android:text="删 除"
+            android:textColor="#DDFFFFFF"
+            android:textSize="@dimen/text_size_middle" />
+
+        <TextView
+            android:id="@id/tv_check_task_modify"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/layout_content"
+            android:background="@drawable/btn_click_grey_havebackground"
+            android:gravity="center"
+            android:text="修改"
+            android:textColor="#DDFFFFFF"
+            android:textSize="@dimen/text_size_middle" />
+
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/ll_task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_click_black_havebackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_check_task_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#DD000000"
+                            android:textSize="@dimen/text_size_big" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/iv_check_task_updownload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+
+                                android:layout_marginRight="5dp"
+                                android:src="@mipmap/upload_ok"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/task_mode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="20dp"
+                                android:textColor="#DD000000"
+                                android:textSize="@dimen/text_size_big" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_check_task_order_code"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:textColor="#DD000000"
+                            android:textSize="@dimen/text_size_middle"  />
+
+                        <TextView
+                            android:id="@+id/tv_check_task_time"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#DD000000"
+                            android:textSize="@dimen/text_size_small"  />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.lide.app.persistence.view.SlidingButtonView>

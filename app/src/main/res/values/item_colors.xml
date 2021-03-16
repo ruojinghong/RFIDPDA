@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="item_bg0">#311b92</color>
+    <color name="item_bg1">#4527a0</color>
+    <color name="item_bg2">#512da8</color>
+    <color name="item_bg3">#5e35b1</color>
+    <color name="item_bg4">#673ab7</color>
+    <color name="item_bg5">#7e57c2</color>
+    <color name="item_bg6">#9575cd</color>
+    <color name="item_bg7">#b39ddb</color>
+    <color name="item_bg8">#d1c4e9</color>
+    <color name="item_bg9">#ede7f6</color>
+</resources>

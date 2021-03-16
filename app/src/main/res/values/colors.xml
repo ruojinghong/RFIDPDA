@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_color_active">#3f51b5</color>
+    <color name="bg_color_base">#303F9F</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="focused_false">#BDC7D8</color>
+    <color name="shadow">#555454</color>
+    <color name="line_text_color">#B6B6B6</color>
+    <color name="divider_view">#bfbfbf</color>
+
+    <color name="light_blue">#449def</color>
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="status_bar_color">@color/primary_dark</color>
+    <color name="textColorPrimary">@color/white</color>
+
+    <color name="stock_read_background_small">#18b3f0</color>
+    <color name="stock_read_background_big">#00a8ec</color>
+    <color name="stock_read_shadow_big">#d4e3e9</color>
+    <color name="stock_read_shadow_small">#d9d9d9</color>
+
+    <color name="lide_logo_brown">#5C5957</color>
+
+    <color name="goods_delivery_title_bg">#199ed8</color>
+    <color name="goods_audit_bg">#0000ff</color>
+    <color name="goods_del_bg">#ff0000</color>
+    <color name="management_text">#1d1b1b</color>
+    <color name="success_text">#f4efef</color>
+    <color name="theme_gray">#ECE9E9</color>
+
+
+    <!-- 下拉-->
+    <color name="global_bg">#eeeff3</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDarkGreen">#005737</color>
+
+    <color name="divide">#000000</color>
+
+    <color name="epc_selected">#11000000</color>
+
+    <color name="design_textinput_error_color_light">#FFD50000</color>
+</resources>

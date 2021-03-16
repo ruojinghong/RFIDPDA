@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theme_gray">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+            <com.bigoffs.rfid.ui.custom.SquareRelativeLayout
+                android:id="@+id/rl_query"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+               >
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@mipmap/home_query"
+                   android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_text_query"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+            </com.bigoffs.rfid.ui.custom.SquareRelativeLayout>
+            <com.bigoffs.rfid.ui.custom.SquareRelativeLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rl_tally"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@mipmap/home_tally"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_tally"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+            </com.bigoffs.rfid.ui.custom.SquareRelativeLayout>
+            <com.bigoffs.rfid.ui.custom.SquareRelativeLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rl_inventory"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@mipmap/home_inventory"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_text_inventory"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+            </com.bigoffs.rfid.ui.custom.SquareRelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <com.bigoffs.rfid.ui.custom.SquareRelativeLayout
+                android:id="@+id/rl_sign"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@mipmap/home_sign"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_test_sign"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+            </com.bigoffs.rfid.ui.custom.SquareRelativeLayout>
+            <com.bigoffs.rfid.ui.custom.SquareRelativeLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rl_storage"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@mipmap/home_storage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_text_storage"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+            </com.bigoffs.rfid.ui.custom.SquareRelativeLayout>
+            <com.bigoffs.rfid.ui.custom.SquareRelativeLayout
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rl_pick"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@mipmap/home_pick"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_text_pick"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+            </com.bigoffs.rfid.ui.custom.SquareRelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <com.bigoffs.rfid.ui.custom.SquareRelativeLayout
+                android:id="@+id/rl_task"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_bg"
+                android:clickable="true"
+                >
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@mipmap/home_task"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_text_task"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"/>
+
+
+            </com.bigoffs.rfid.ui.custom.SquareRelativeLayout>
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"></RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
